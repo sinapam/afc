@@ -18,3 +18,5 @@ target-eclipse/
 *.classpath
 .classpath
 .project
+build
+.gradle
