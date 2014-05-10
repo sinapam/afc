@@ -30,7 +30,12 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            ddriverClassName = "com.mysql.jdbc.Driver"
+            username = "afc"
+            password =  "afc"
+            dbCreate = "update"
+            //logSql = true
+            url = "jdbc:mysql://localhost:3306/afc?useUnicode=true&characterEncoding=utf8"
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                jmxEnabled = true
